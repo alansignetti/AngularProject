@@ -1,0 +1,17 @@
+
+<h1 class="subheader">Test Page</h1>
+
+<div *ngIf="name && lastName">
+<h2>Name: {{name}}</h2>
+<h2>Last Name: {{lastName}}</h2>
+
+</div>
+
+<!-- show or hide button -->
+<div *ngIf="!name || !lastName">
+<button class="show-hide__button" (click)="showName()">Show!</button>
+</div>
+<div *ngIf="name && lastName">
+  <button class="show-hide__button" (click)="hideName()">Hide!</button>
+</div>
+

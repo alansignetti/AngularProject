@@ -1,0 +1,39 @@
+<header id="header">
+  <!-- BEGIN CENTER -->
+  <div class="center">
+      <!-- BEGIN LOGO -->
+      <div id="logo">
+          <img src="assets/images/angular-logo.svg" class="app-logo" alt="Logo">
+
+          <span id="brand"><strong>Angular</strong>&nbsp;Project</span>
+      </div>
+      <!-- END LOGO -->
+      <!-- BEGIN MENU -->
+      <nav id="menu">
+          <ul>
+              <li>
+                  <a [routerLink]="['/home']" routerLinkActive="active">Home</a>
+              </li>
+              <li>
+                  <a [routerLink]="['/blog']" routerLinkActive="active" >Blog</a>
+              </li>
+              <li>
+                  <a [routerLink]="['/form']" routerLinkActive="active">Form</a>
+              </li>
+              <li>
+                  <a [routerLink]="['/movies']" routerLinkActive="active">Movies</a>
+              </li>
+              <li>
+                  <a [routerLink]="['/page']" routerLinkActive="active">Page</a>
+              </li>
+
+          </ul>
+          <div class="animation start-home"></div>
+      </nav>
+      <!-- END MENU -->
+      <!-- CLEAR FLOATS -->
+      <div class="clearfix"></div>
+  </div>
+  <!-- END CENTER -->
+</header>
+<!-- END HEADER -->
