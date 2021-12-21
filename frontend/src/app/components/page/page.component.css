@@ -12,11 +12,12 @@
   font-size: 1.125rem; /* 18px */
   font-weight: 600;
   line-height: 1.75rem; /* 28px */
-  padding: 1rem 1.25rem;
+  padding: 0.5rem 1rem;
   text-align: center;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  /* width: max-content; */
 }
 
 .show-hide__button:hover {

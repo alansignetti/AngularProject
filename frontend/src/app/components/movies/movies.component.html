@@ -1,17 +1,23 @@
+<app-slider [name]="'Movies'" [size]="'small'"></app-slider>
 
-<h1 class="subheader" *ngIf="movies">Movies</h1>
-<div id="articles">
-  <!-- List of Articles -->
-  <article class="article-item" *ngFor="let movie of movies">
-    <div class="img-wrap">
-      <img
-        src={{movie.image}}
-        alt={{movie.title}}
-      />
+<div class="center">
+  <section id="content">
+
+    <div id="favorite" *ngIf="favorite">
+      <h2 class="subheader">Favorite Film</h2>
+      <h4>{{favorite.title}}</h4>
+      <div>
+        <img class="img-movies" src={{favorite.image}} alt={{favorite.title}}>
+      </div>
     </div>
-    <h2>{{movie.title}}</h2>
-    <!-- <span class="date">5 min ago</span>
-    <a href="#">Read more</a> -->
-    <div class="clearfix"></div>
-  </article>
+
+    <h1 class="subheader" *ngIf="movies">Movies</h1>
+    <div id="articles">
+      <!-- List of Articles -->
+      <div *ngFor="let movie of movies">
+        <app-film [movie]="movie" (selectAsFavorite)= "showFavorite($event)"></app-film>
+      </div>
+    </div>
+  </section>
+  <app-sidebar></app-sidebar>
 </div>

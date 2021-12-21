@@ -1,17 +1,28 @@
+<app-slider [name]="'Test Page'"></app-slider>
+
+<div class="center">
+  <section id="content">
+
 
 <h1 class="subheader">Test Page</h1>
 
-<div *ngIf="name && lastName">
-<h2>Name: {{name}}</h2>
-<h2>Last Name: {{lastName}}</h2>
-
-</div>
-
 <!-- show or hide button -->
-<div *ngIf="!name || !lastName">
-<button class="show-hide__button" (click)="showName()">Show!</button>
-</div>
-<div *ngIf="name && lastName">
+<div *ngIf="!name || !lastName; then show else hide"></div>
+
+<ng-template #show>
+  <button class="show-hide__button" (click)="showName()">Show!</button>
+</ng-template>
+
+<ng-template #hide>
   <button class="show-hide__button" (click)="hideName()">Hide!</button>
+</ng-template>
+
+<div *ngIf="name && lastName">
+  <h2>Name: {{ name }}</h2>
+  <h2>Last Name: {{ lastName }}</h2>
 </div>
 
+
+  </section>
+  <app-sidebar></app-sidebar>
+</div>

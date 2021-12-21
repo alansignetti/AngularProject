@@ -225,7 +225,8 @@ input[type="text"]{
 }
 
 .article-item .img-wrap{
-   width: 130px;
+   /* width: 130px; */
+   width: fit-content ;
    height: 130px;
    overflow: hidden;
    float: left;
@@ -234,8 +235,10 @@ input[type="text"]{
 }
 .article-item .img-wrap img{
   height: 100%;
+  width: 90px;
   text-align: center;
 }
+
 .article-item h2 {
   display: block;
   width: 100%;
@@ -243,6 +246,7 @@ input[type="text"]{
   padding:0;
   margin-bottom: 7px;
 }
+
 .article-item .date{
   display: block;
   width: 100%;

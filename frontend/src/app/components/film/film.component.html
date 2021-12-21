@@ -1,0 +1,15 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<article class="article-item" >
+  <div class="img-wrap">
+    <img src="{{ movie.image }}" alt="{{ movie.title }}" />
+  </div>
+  <h2>{{ movie.title }}</h2>
+  <!-- <span class="date">5 min ago</span> -->
+<!-- <a href="#">Read more</a> -->
+
+  <!-- <button>Mark as Favorite</button> -->
+
+  <div class="clearfix"></div>
+  <span class="fa fa-star favorite" (click)="favorite($event, movie)"></span>
+</article>

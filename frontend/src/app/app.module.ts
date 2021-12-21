@@ -13,6 +13,7 @@ import { FormComponent } from './components/form/form.component';
 import { PageComponent } from './components/page/page.component';
 import { ErrorComponent } from './components/error/error.component';
 import { MoviesComponent } from './components/movies/movies.component';
+import { FilmComponent } from './components/film/film.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MoviesComponent } from './components/movies/movies.component';
     FormComponent,
     PageComponent,
     ErrorComponent,
-    MoviesComponent
+    MoviesComponent,
+    FilmComponent
   ],
   imports: [
     BrowserModule,

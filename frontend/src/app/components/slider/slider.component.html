@@ -1,6 +1,10 @@
+
 <!-- BEGIN SLIDER -->
-<div id="slider" class="slider-big">
-  <h1>Angular Project</h1>
-  <a href="blog.html" class="button-white">Blog</a>
+<div id="slider" [ngClass]="{
+  'slider-big': !size || size == 'big',
+  'slider-small': size == 'small'
+}">
+  <h1>{{name}}</h1>
+  <a [routerLink]="['/blog']" class="button-white" *ngIf="!size || size == 'big'">Blog</a>
 </div>
 <!-- END SLIDER -->

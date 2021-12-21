@@ -1,0 +1,16 @@
+.favorite {
+  color: orange;
+  cursor: pointer;
+  opacity:0.5;
+}
+.favorite:hover
+{
+  opacity:1;
+
+}
+
+.checked{
+  opacity:1;
+}
+
+
