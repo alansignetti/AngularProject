@@ -11,5 +11,6 @@
   <!-- <button>Mark as Favorite</button> -->
 
   <div class="clearfix"></div>
-  <span class="fa fa-star favorite" (click)="favorite($event, movie)"></span>
+  <span class="fa fa-star favorite" (click)="favorite($event, movie)"
+                                    [ngClass]="status ? 'checked' : 'unchecked'"></span>
 </article>

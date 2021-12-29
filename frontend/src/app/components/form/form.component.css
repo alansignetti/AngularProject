@@ -1,0 +1,13 @@
+
+#show-data
+{
+  width: fit-content;
+  margin: 0 auto;
+}
+
+
+.btn-success:disabled {
+  background-color: #4a4a4ae1;
+  
+  cursor: not-allowed;
+}

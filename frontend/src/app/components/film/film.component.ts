@@ -11,6 +11,7 @@ export class FilmComponent implements OnInit {
 
   @Input() movie: Film;
   @Output() selectAsFavorite = new EventEmitter();
+  status: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -20,6 +21,7 @@ export class FilmComponent implements OnInit {
     this.selectAsFavorite.emit({
       movie:movie
     });
+    this.status = !this.status;  
   }
 
 

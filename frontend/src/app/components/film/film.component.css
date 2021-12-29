@@ -2,6 +2,7 @@
   color: orange;
   cursor: pointer;
   opacity:0.5;
+  font-size: 20px;
 }
 .favorite:hover
 {
@@ -12,5 +13,6 @@
 .checked{
   opacity:1;
 }
+
 
 

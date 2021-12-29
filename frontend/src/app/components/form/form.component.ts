@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
-  constructor() { }
+  public user: any;
+  constructor() {
+    this.user = {
+      name: '',
+      lastName: '',
+      gender: ''
+    }
+   }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(){
+    alert(this.user.name+'\n'+this.user.lastName+'\n'+this.user.gender);
+    console.log(this.user)
   }
 
 }

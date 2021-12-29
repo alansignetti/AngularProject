@@ -1,9 +1,3 @@
 export class Film {
-  constructor(
-    public title: string,
-    public image: string
-    ) {
-
-      
-    }
+  constructor(public title: string, public image: string) {}
 }
