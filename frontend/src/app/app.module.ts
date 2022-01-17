@@ -16,6 +16,8 @@ import { MoviesComponent } from './components/movies/movies.component';
 import { FilmComponent } from './components/film/film.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ArticlesComponent } from './components/articles/articles.component';
+import { MomentModule } from 'ngx-moment';
 
 @NgModule({
   declarations: [
@@ -30,13 +32,15 @@ import { HttpClientModule } from '@angular/common/http';
     PageComponent,
     ErrorComponent,
     MoviesComponent,
-    FilmComponent
+    FilmComponent,
+    ArticlesComponent
   ],
   imports: [
     BrowserModule,
     routing,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MomentModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]

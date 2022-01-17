@@ -78,7 +78,7 @@ var controller = {
         var query = Article.find({}); 
         
         var last = parseInt(req.params.last);
-        console.log(typeof(last));
+        // console.log(typeof(last));
         if (last || last != undefined) {
             query.limit(5);
         };
