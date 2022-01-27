@@ -77,11 +77,13 @@ var controller = {
         
         var query = Article.find({}); 
         
-        var last = parseInt(req.params.last);
+        // var last = parseInt(req.params.last);
+        var last = req.params.last;
         // console.log(typeof(last));
-        if (last || last != undefined) {
-            query.limit(5);
+        if (last && last !=null && last !=undefined ) {
+            query.limit(2);
         };
+        console.log(last)
         // Find 
         query.sort('-_id').exec((err, articles) => {
             if (err) {

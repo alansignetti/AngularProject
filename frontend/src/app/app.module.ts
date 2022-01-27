@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ArticlesComponent } from './components/articles/articles.component';
 import { MomentModule } from 'ngx-moment';
+import { ArticleComponent } from './components/article/article.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { MomentModule } from 'ngx-moment';
     ErrorComponent,
     MoviesComponent,
     FilmComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,

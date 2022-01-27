@@ -16,13 +16,16 @@ export class ArticleService{
     this.url = Global.url;
   }
 
+  getArticles(last:any = null):Observable<any>{
+      var articles = 'articles';
+      if(last !=null){
+        articles = 'articles/true';
+      }
+    return this._http.get(this.url+articles)
+  }
 
-    prueba(){
-      return console.log("Article Service http")
-    }
-
-    getArticles():Observable<any>{
-      return this._http.get(this.url+'articles')
+  getArticle(id: string ):Observable<any>{
+    return this._http.get(this.url+'article/'+ id)
   }
 
 
