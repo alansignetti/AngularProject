@@ -1,8 +1,10 @@
+import { Global } from 'src/app/services/global';
 
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params} from '@angular/router';
 import { ArticleService } from 'src/app/services/article.service';
 import { Article } from '../models/article';
+
 @Component({
   selector: 'app-article',
   templateUrl: './article.component.html',
@@ -12,11 +14,15 @@ import { Article } from '../models/article';
 export class ArticleComponent implements OnInit {
 
   public article: Article;
+  public url: string;
   constructor(
     private _articleService: ArticleService,
     private _route: ActivatedRoute,
     private _router: Router
-  ) { }
+  ) {
+    this.url = Global.url;
+
+  }
 
   ngOnInit(): void {
     this._route.params.subscribe(params =>{

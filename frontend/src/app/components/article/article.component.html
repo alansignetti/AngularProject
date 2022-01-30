@@ -6,24 +6,27 @@
 
 <div class="center">
   <section id="content">
-    <article class="article-item article-detail">
+    <div class="loading" *ngIf="!article">
+      <img src="/assets/images/loader.gif" style="height: 30px;" alt="loading" />
+    </div>
+    <article class="article-item article-detail" *ngIf="article">
       <div class="img-wrap">
-          <img src="https://www.dzoom.org.es/wp-content/uploads/2017/07/seebensee-2384369-810x540.jpg" alt="Paisaje">
+        <img src="{{url +'get-image/'+article.image}}" alt="{{article.title}}" *ngIf="article.image"/>
+        <img src="/assets/images/default.png" alt="{{article.title}}" *ngIf="!article.image"/>
       </div>
       <h1 id="article-title" >{{article.title}}</h1>
-      <span class="date">5 min ago</span>
+      <span class="date">{{article.date | amTimeAgo}}</span>
       <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, neque! Adipisci fuga quod quam corrupti cupiditate aut excepturi voluptas et nobis, nemo dolorum repudiandae veniam corporis facere fugiat ipsam error minus! Perspiciatis labore iusto blanditiis quis? Optio, cum
+          {{article.content}}
       </p>
-      <p>possimus, ex labore qui quam vero excepturi suscipit voluptates minus reiciendis ab cumque esse omnis. Expedita, qui. Illum perspiciatis incidunt earum harum odio qui fugiat eligendi ipsam culpa, vitae architecto alias obcaecati aliquam excepturi laboriosam repudiandae illo possimus. Est adipisci omnis autem, nulla ipsa odit veniam sit, aut nihil eveniet sapiente dolore aspernatur obcaecati nobis corporis, provident dolor aliquid. Labore, dolorem assumenda?
 
-      </p>
 
       <a href="#" class="btn btn-edit">Edit</a>
       <a href="#" class="btn btn-delete">Delete</a>
 
 
       <div class="clearfix"></div>
+
   </article>
 
 

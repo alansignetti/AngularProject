@@ -4,12 +4,13 @@
   "description": "API Restful",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon /backend/index.js",
+    "start": "node index.js"
+    
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alansignetti/AngularProject.git"
+    "url": "https://github.com/alansignetti/AngularProject.git"
   },
   "author": "Alan Signetti",
   "license": "ISC",
@@ -27,5 +28,8 @@
     "multiparty": "^4.2.2",
     "save": "^2.4.0",
     "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
