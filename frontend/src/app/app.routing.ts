@@ -1,3 +1,4 @@
+import { SearchComponent } from './components/search/search.component';
 // Importar los modulos del router de angular
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -17,6 +18,7 @@ const appRoutes: Routes = [
     {path: 'home', component: HomeComponent},
     {path: 'blog', component: BlogComponent},
     {path: 'blog/article/:id', component: ArticleComponent},
+    {path: 'search/:search', component: SearchComponent},
     {path: 'form', component: FormComponent},
     {path: 'movies', component: MoviesComponent},
     {path: 'page', component: PageComponent},

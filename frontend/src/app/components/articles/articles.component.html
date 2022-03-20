@@ -1,9 +1,14 @@
 
 <div class="loading" *ngIf="!articles" >
-  <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8x673lAqqSpjVEnBitXxM0cdgKz84me3ehwiJGCGTQ7Po9zz4J2Rr-JOnp5fAdP0xTU4&usqp=CAU" style="height: 30px;" alt="loader_spin" /> -->
   <div class="loadingio-spinner-spinner-igdsb3k5tso"><div class="ldio-4ux2e2fx41">
     <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
     </div></div>
+</div>
+
+<div class="loading" *ngIf="articles && articles.length == 0" >
+    <div>
+      <h2>There are no articles </h2>
+    </div>
 </div>
 
 <div id="articles">

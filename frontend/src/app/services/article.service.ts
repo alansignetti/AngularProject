@@ -28,6 +28,9 @@ export class ArticleService{
     return this._http.get(this.url+'article/'+ id)
   }
 
+  search(searchString: string ):Observable<any>{
+    return this._http.get(this.url+'search/'+searchString)
+  }
 
 }
 
