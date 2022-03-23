@@ -20,6 +20,7 @@ import { ArticlesComponent } from './components/articles/articles.component';
 import { MomentModule } from 'ngx-moment';
 import { ArticleComponent } from './components/article/article.component';
 import { SearchComponent } from './components/search/search.component';
+import { CreatedArticleComponent } from './components/created-article/created-article.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { SearchComponent } from './components/search/search.component';
     FilmComponent,
     ArticlesComponent,
     ArticleComponent,
-    SearchComponent
+    SearchComponent,
+    CreatedArticleComponent
   ],
   imports: [
     BrowserModule,
