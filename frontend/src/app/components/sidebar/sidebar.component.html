@@ -2,14 +2,14 @@
 
   <div id="nav-blog" class="sidebar-item">
     <h3>Write an article</h3>
-    <a href="#" class="btn btn-success">Create Article</a>
+    <a [routerLink]="['/blog/create']" class="btn btn-success">Create Article</a>
   </div>
 
   <div id="nav-search" class="sidebar-item">
     <h3>Search</h3>
     <p>Search the article</p>
-    <form>
-      <input type="text" name="search" />
+    <form #searchForm="ngForm" (ngSubmit)="goSearch()">
+      <input type="text" name="search" placeholder="IPhone" [(ngModel)]="searchString"/>
       <input type="submit" name="submit" value="search" class="btn" />
     </form>
   </div>

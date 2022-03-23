@@ -28,6 +28,21 @@ export class ArticleService{
     return this._http.get(this.url+'article/'+ id)
   }
 
+  search(searchString: string ):Observable<any>{
+    return this._http.get(this.url+'search/'+searchString)
+  }
+
+  create(article:Article):Observable<any>{
+    let params = JSON.stringify(article);
+    let headers = new HttpHeaders().set('Content-Type','application/json');
+
+    return this._http.post(this.url+'save',params, {headers:headers});
+  }
+
+
+
+
+
 
 }
 

@@ -19,6 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ArticlesComponent } from './components/articles/articles.component';
 import { MomentModule } from 'ngx-moment';
 import { ArticleComponent } from './components/article/article.component';
+import { SearchComponent } from './components/search/search.component';
+import { CreatedArticleComponent } from './components/created-article/created-article.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { ArticleComponent } from './components/article/article.component';
     MoviesComponent,
     FilmComponent,
     ArticlesComponent,
-    ArticleComponent
+    ArticleComponent,
+    SearchComponent,
+    CreatedArticleComponent
   ],
   imports: [
     BrowserModule,

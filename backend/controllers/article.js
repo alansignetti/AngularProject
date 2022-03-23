@@ -25,16 +25,21 @@ var controller = {
 
     save: (req, res) => {
         // receive POST params
-        var params = req.query;
+        var params = req.body;
         // Validate data (validator)
+        // console.log(params.title);
+        // console.log(params.content);
+        
         try {
             var validate_title = !validator.isEmpty(params.title);
             var validate_content = !validator.isEmpty(params.content);
+            
         } catch (err) {
-            console.log(params);
+            // console.log(params.title);
+            // console.log('parametros '+ params.title +' '+ params.content);
             return res.status(200).send({
                 status: 'error',
-                message: 'Missing data'
+                message: 'Missing data' 
             });
             
         }
@@ -81,7 +86,7 @@ var controller = {
         var last = req.params.last;
         // console.log(typeof(last));
         if (last && last !=null && last !=undefined ) {
-            query.limit(2);
+            query.limit(4);
         };
         console.log(last)
         // Find 
