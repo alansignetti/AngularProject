@@ -3,29 +3,29 @@ import { ArticleService } from 'src/app/services/article.service';
 import { Article } from './../models/article';
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
+import swal from 'sweetalert';
 
 @Component({
   selector: 'app-created-article',
   templateUrl: './created-article.component.html',
   styleUrls: ['./created-article.component.css'],
-  providers: [ArticleService]
+  providers: [ArticleService],
 })
 export class CreatedArticleComponent implements OnInit {
-
   public article: Article;
   public status: string;
   public page_title: string;
-  public is_edit:boolean;
+  public is_edit: boolean;
   public url: string;
 
   afuConfig = {
     multiple: false,
-    formatsAllowed: ".jpg,.png,.gif,.jpeg",
+    formatsAllowed: '.jpg,.png,.gif,.jpeg',
     maxSize: 50,
     uploadAPI: {
-      url: Global.url+'/upload-image'
-      },
-    theme: "attachPin",
+      url: Global.url + '/upload-image',
+    },
+    theme: 'attachPin',
     hideProgressBar: true,
     hideResetBtn: true,
     hideSelectBtn: false,
@@ -39,8 +39,8 @@ export class CreatedArticleComponent implements OnInit {
       attachPinBtn: 'Attach File...',
       afterUploadMsg_success: 'Successfully Uploaded !',
       afterUploadMsg_error: 'Upload Failed !',
-      sizeLimit: 'Size Limit'
-    }
+      sizeLimit: 'Size Limit',
+    },
   };
 
   constructor(
@@ -48,43 +48,39 @@ export class CreatedArticleComponent implements OnInit {
     private _route: ActivatedRoute,
     private _router: Router
   ) {
-
-    this.article = new Article('', '', '', '', null),
-    this.page_title = 'Create a New Article!',
-    this.url = Global.url;
+    (this.article = new Article('', '', '', '', null)),
+      (this.page_title = 'Create a New Article!'),
+      (this.url = Global.url);
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   onSubmit() {
-
     this._articleService.create(this.article).subscribe(
-      res => {
+      (res) => {
         if (res.status == 'success') {
           this.status = 'success';
           this.article = res.article;
-          this._router.navigate(['/home']);
 
+          //sweetalert
+          swal('Article Created!', 'Article Created Succesfully', 'success');
+
+          this._router.navigate(['/home']);
         } else {
           this.status = 'error';
           // this._router.navigate(['/blog']);
         }
-
-
       },
-      err => {
+      (err) => {
         this.status = 'error';
         // this._router.navigate(['/blog']);
       }
-    )
+    );
   }
 
-  imageUpload(data:any){
+  imageUpload(data: any) {
     let image_data = data.body.image;
     this.article.image = image_data;
     console.log(this.article);
   }
-
-
 }

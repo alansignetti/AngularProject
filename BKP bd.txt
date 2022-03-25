@@ -1,0 +1,79 @@
+/* 1 */
+{
+    "_id" : ObjectId("61bce14abf627cf61ae34e22"),
+    "date" : "2021-12-17T19:13:14.681Z",
+    "title" : "Lion",
+    "content" : "The lion (Panthera leo) is a large cat of the genus Panthera native to Africa and India. It has a muscular, deep-chested body, short, rounded head, round ears, and a hairy tuft at the end of its tail. It is sexually dimorphic; adult male lions are larger than females and have a prominent mane. It is a social species, forming groups called prides. A lion's pride consists of a few adult males, related females, and cubs. Groups of female lions usually hunt together, preying mostly on large ungulates. The lion is an apex and keystone predator; although some lions scavenge when opportunities occur and have been known to hunt humans, the species typically does not.",
+    "image" : "LOqv-IgjAY_73QbK9ztgKG-r.jpg",
+    "__v" : 0
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("61bce158bf627cf61ae34e26"),
+    "date" : "2021-12-17T19:13:28.556Z",
+    "title" : "Black Panther",
+    "content" : "Melanism in the jaguar is conferred by a dominant allele, and in the leopard (Panthera pardus) by a recessive allele. Close examination of the color of these black cats will show that the typical markings are still present, but are hidden by the excess black pigment melanin, giving an effect similar to that of printed silk.",
+    "image" : "WQ_A-T6o8tS7F19_6HJApKp5.jpg",
+    "__v" : 0
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("61bce15dbf627cf61ae34e28"),
+    "date" : ISODate("2021-12-17T19:13:33.809Z"),
+    "title" : "article changed",
+    "content" : "article edited",
+    "image" : null,
+    "__v" : 0
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("61f6cee9f8c1e1766163d316"),
+    "date" : "2021-12-17T19:13:28.556Z",
+    "title" : "White Shark",
+    "content" : "The great white shark (Carcharodon carcharias), also known as the white shark, white pointer, or simply great white, is a species of large mackerel shark which can be found in the coastal surface waters of all the major oceans. It is notable for its size, with larger female individuals growing to 6.1 m (20 ft) in length and 1,905–2,268 kg (4,200–5,000 lb) in weight at maturity. However, most are smaller; males measure 3.4 to 4.0 m (11 to 13 ft), and females measure 4.6 to 4.9 m (15 to 16 ft) on average",
+    "image" : "ADZ5bHp4RV7JVkF1ZcL8vCZS.jpg",
+    "__v" : 0
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("6236861e83954c3468619c93"),
+    "date" : "2021-12-17T19:13:28.556Z",
+    "title" : "Hammerhead Shark",
+    "content" : "The hammerhead sharks are a group of sharks that form the family Sphyrnidae, so named for the unusual and distinctive structure of their heads, which are flattened and laterally extended into a 'hammer' shape called a cephalofoil. Most hammerhead species are placed in the genus Sphyrna, while the winghead shark is placed in its own genus, Eusphyra. Many different, but not necessarily mutually exclusive, functions have been postulated for the cephalofoil, including sensory reception, manoeuvering, and prey manipulation. The cephalofoil gives the shark superior binocular vision and depth perception.",
+    "image" : "68hWZ4mKjzwzQ8ctThWKDPwe.jpg",
+    "__v" : 0
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("62368a4ef37aca7ece3aaa51"),
+    "date" : "2022-03-19T19:13:28.556Z",
+    "title" : "Iphone 13 White",
+    "content" : "The iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and cellular phone into one device with a touchscreen interface.",
+    "image" : "lhYmiLn8LwbaMMMOZ718yfZk.jpg",
+    "__v" : 0
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("62368a61f37aca7ece3aaa55"),
+    "date" : "2022-03-19T19:13:28.556Z",
+    "title" : "Iphone 13 Black",
+    "content" : "The iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and cellular phone into one device with a touchscreen interface.",
+    "image" : "-Y-EFDWZDPZOzIWdQlxCnTfA.jpg",
+    "__v" : 0
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("62368a6af37aca7ece3aaa5b"),
+    "date" : "2022-03-19T19:13:28.556Z",
+    "title" : "Iphone 13 Red",
+    "content" : "The iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and cellular phone into one device with a touchscreen interface.",
+    "image" : "EFK2u-K-wKrO-gCRTJVejmDc.jpg",
+    "__v" : 0
+}

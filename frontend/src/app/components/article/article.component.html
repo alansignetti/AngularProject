@@ -24,7 +24,7 @@
 
 
       <a [routerLink]="['/blog/edit',article._id]" class="btn btn-edit">Edit</a>
-      <a href="#" class="btn btn-delete">Delete</a>
+      <a (click)="delete(article._id)" class="btn btn-delete">Delete</a>
 
 
       <div class="clearfix"></div>
