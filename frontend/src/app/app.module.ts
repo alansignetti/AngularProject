@@ -21,7 +21,8 @@ import { MomentModule } from 'ngx-moment';
 import { ArticleComponent } from './components/article/article.component';
 import { SearchComponent } from './components/search/search.component';
 import { CreatedArticleComponent } from './components/created-article/created-article.component';
-
+import { AngularFileUploaderModule } from 'angular-file-uploader';
+import { ArticleEditComponent } from './components/article-edit/article-edit.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +40,8 @@ import { CreatedArticleComponent } from './components/created-article/created-ar
     ArticlesComponent,
     ArticleComponent,
     SearchComponent,
-    CreatedArticleComponent
+    CreatedArticleComponent,
+    ArticleEditComponent
   ],
   imports: [
     BrowserModule,
@@ -47,6 +49,7 @@ import { CreatedArticleComponent } from './components/created-article/created-ar
     FormsModule,
     HttpClientModule,
     MomentModule
+    ,AngularFileUploaderModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
