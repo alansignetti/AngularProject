@@ -222,6 +222,16 @@ textarea{
   height: 150px;
 }
 
+.btn.up_btn.afu-attach-pin{
+  display: block !important;
+  width: 50% !important;
+  max-width: 70% !important;
+}
+
+.image-thumb img{
+  width: 100px;
+}
+
 .btn-success:disabled {
   background-color: #4a4a4ae1;
 
